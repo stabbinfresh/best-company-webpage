@@ -10,7 +10,7 @@ st.header("Our Team")
 
 df = pd.read_csv("data.csv")
 
-col1, empty1, col2, empty2, col3 = st.columns([1.5, 0.5, 1.5, 0.5, 1.5])
+col1, col2, col3 = st.columns(3)
 
 with col1:
     for index, row in df[:4].iterrows():
